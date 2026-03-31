@@ -50,23 +50,18 @@ credentials.json
 # Data Files (CSV, Excel, etc.)
 # ──────────────────────────────────────────────────────────────
 # Raw data
-data/*.csv
-data/*.xlsx
-data/*.xls
-data/*.json
-data/*.jsonl
+
+
 pipeline/*.npy
 
-# Cleaned/processed data
-data/*_cleaned*.csv
-data/*_labelled*.csv
+# Cleaned/cleaned*.csv
+
 data/*_balanced*.csv
 data/*_fixed*.csv
 data/*_final*.csv
 
 # Specific large files
-data/daraz_reviews_*.csv
-pipeline/daraz_*.csv
+
 
 # Keep sample data (if you have any)
 !data/sample_*.csv
@@ -76,7 +71,7 @@ pipeline/daraz_*.csv
 # Model Files
 # ──────────────────────────────────────────────────────────────
 # Keras/TensorFlow models
-*.h5
+
 *.hdf5
 *.keras
 *.pb
@@ -98,9 +93,10 @@ model_checkpoints/
 *.npz
 
 # Word2Vec models
-*.bin
+*.binprocessed data
+
 *.vec
-*.model
+
 w2v_model/
 
 # Model artifacts
