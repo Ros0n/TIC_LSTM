@@ -29,7 +29,7 @@ PAGES_PER_PRODUCT = 3
 REQUEST_DELAY = 1.5
 
 # Output file
-OUTPUT_FILE = "daraz_reviews_dataset.csv"
+OUTPUT_FILE = "../data/daraz_reviews_dataset.csv"
 
 # ─────────────────────────────────────────────
 # PRODUCTS TO SCRAPE

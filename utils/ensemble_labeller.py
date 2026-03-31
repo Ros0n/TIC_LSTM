@@ -23,7 +23,7 @@ GROQ_API_KEY_2 = os.getenv("GROQ_API_KEY_2")  # GPT-OSS
 GROQ_API_KEY_3 = os.getenv("GROQ_API_KEY_3")  # Qwen
 
 INPUT_FILE    = "daraz_reviews_cleaned2.csv"
-OUTPUT_FILE   = "daraz_reviews_labelled1.csv"
+OUTPUT_FILE   = "..data/daraz_reviews_labelled.csv"
 PROGRESS_FILE = "labelling_progress.json"
 
 DAILY_LIMIT  = 950   # per key — stop before hitting 1000/day
@@ -31,8 +31,8 @@ MAX_RETRIES  = 3
 BACKOFF_BASE = 30    # seconds — doubles on each retry
 ROW_DELAY    = 3.5   # seconds between rows — 3 parallel calls so only need ~3.5s gap
 
-VALID_LABELS   = ["customer_service", "delivery", "product_feedback", "recommendation"]
-PRIORITY_ORDER = ["customer_service", "delivery", "product_feedback", "recommendation"]
+VALID_LABELS   = ["customer_service", "delivery", "product_feedback" ]
+PRIORITY_ORDER = ["customer_service", "delivery", "product_feedback" ]
 
 # ─────────────────────────────────────────────────────────────────────────────
 # SYSTEM PROMPT
@@ -45,12 +45,10 @@ Classify into EXACTLY ONE label using this priority order (assign highest that a
 1. customer_service  — return/refund/exchange, seller not responding, warranty, complaint
 2. delivery          — delivery speed, packaging, wrong item, courier
 3. product_feedback  — quality, sound, battery, size, defects, brand comparison
-4. recommendation    — generic praise, "highly recommend", overall satisfaction, no specific detail
 
 EXAMPLES:
 "Product is good but delivery was late"           → delivery
 "Support didn't respond and refund delayed"       → customer_service
-"Good quality, highly recommend"                  → recommendation
 "Battery is bad"                                  → product_feedback
 "Return garnu paryako, product nai ramro chaina"  → customer_service
 
