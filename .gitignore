@@ -1,0 +1,262 @@
+
+
+# ──────────────────────────────────────────────────────────────
+# Python
+# ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ──────────────────────────────────────────────────────────────
+# Virtual Environments
+# ──────────────────────────────────────────────────────────────
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# ──────────────────────────────────────────────────────────────
+# Environment Variables & Secrets
+# ──────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.env
+secrets.json
+config/secrets/
+
+# API keys
+*_api_key*
+*.key
+credentials.json
+
+# ──────────────────────────────────────────────────────────────
+# Jupyter Notebooks
+# ──────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ──────────────────────────────────────────────────────────────
+# Data Files (CSV, Excel, etc.)
+# ──────────────────────────────────────────────────────────────
+# Raw data
+data/*.csv
+data/*.xlsx
+data/*.xls
+data/*.json
+data/*.jsonl
+pipeline/*.npy
+
+# Cleaned/processed data
+data/*_cleaned*.csv
+data/*_labelled*.csv
+data/*_balanced*.csv
+data/*_fixed*.csv
+data/*_final*.csv
+
+# Specific large files
+data/daraz_reviews_*.csv
+pipeline/daraz_*.csv
+
+# Keep sample data (if you have any)
+!data/sample_*.csv
+!data/README.md
+
+# ──────────────────────────────────────────────────────────────
+# Model Files
+# ──────────────────────────────────────────────────────────────
+# Keras/TensorFlow models
+*.h5
+*.hdf5
+*.keras
+*.pb
+saved_model/
+checkpoints/
+model_checkpoints/
+
+# PyTorch models
+*.pt
+*.pth
+
+# Scikit-learn models
+*.pkl
+*.pickle
+*.joblib
+
+# NumPy arrays
+*.npy
+*.npz
+
+# Word2Vec models
+*.bin
+*.vec
+*.model
+w2v_model/
+
+# Model artifacts
+pipeline/*.h5
+pipeline/*.pkl
+pipeline/*.pickle
+models/*.h5
+models/*.pkl
+
+# Keep model architecture definitions
+!models/model_architecture.py
+
+# ──────────────────────────────────────────────────────────────
+# Training Outputs & Logs
+# ──────────────────────────────────────────────────────────────
+logs/
+*.log
+training_logs/
+tensorboard_logs/
+wandb/
+mlruns/
+
+# Training progress files
+*_progress.json
+labelling_progress.json
+
+# ──────────────────────────────────────────────────────────────
+# Visualizations & Plots
+# ──────────────────────────────────────────────────────────────
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+
+# Keep documentation images
+!docs/*.png
+!docs/*.jpg
+!README_images/
+
+# Specific plots
+pipeline/*.png
+plots/
+figures/
+visualizations/
+
+# ──────────────────────────────────────────────────────────────
+# IDE & Editor Files
+# ──────────────────────────────────────────────────────────────
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ──────────────────────────────────────────────────────────────
+# Operating System Files
+# ──────────────────────────────────────────────────────────────
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# ──────────────────────────────────────────────────────────────
+# Testing & Coverage
+# ──────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+
+# ──────────────────────────────────────────────────────────────
+# Temporary Files
+# ──────────────────────────────────────────────────────────────
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*~
+
+# ──────────────────────────────────────────────────────────────
+# Large/Generated Files
+# ──────────────────────────────────────────────────────────────
+# Compressed files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ──────────────────────────────────────────────────────────────
+# Project-Specific
+# ──────────────────────────────────────────────────────────────
+# Script outputs
+fix_csv.py
+CSV_FIX_README.txt
+
+# Collected reviews
+collected_reviews/
+scraped_data/
+
+# Experimental notebooks
+experiments/
+scratch/
+test_*.ipynb
+
+# Old versions
+*_old.*
+*_backup.*
+*.old
+
+# ──────────────────────────────────────────────────────────────
+# Keep These Files (Important!)
+# ──────────────────────────────────────────────────────────────
+!requirements.txt
+!README.md
+!LICENSE
+!.gitignore
+!data/README.md
+!pipeline/README.md
