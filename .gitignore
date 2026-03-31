@@ -103,7 +103,7 @@ w2v_model/
 pipeline/*.h5
 pipeline/*.pkl
 pipeline/*.pickle
-models/*.h5
+
 models/*.pkl
 
 # Keep model architecture definitions
